@@ -256,7 +256,7 @@
                     choosed[getKey(m)] = 1;
                     list[m.index].style.color = color;
                     return "PG" + '<br/>' +  m.name + '<br/>' + m.phone;
-                })) ;
+                })[0]) ;
             localStorage.setItem('choosed', JSON.stringify(choosed));
 
 
@@ -279,7 +279,7 @@
                     choosed[getKey(m)] = 1;
                     list[m.index].style.color = color;
                     return "SG" + '<br/>' +  m.name + '<br/>' + m.phone;
-                })) ;
+                })[0]) ;
             localStorage.setItem('choosed', JSON.stringify(choosed));
 
 
@@ -302,7 +302,7 @@
                     choosed[getKey(m)] = 1;
                     list[m.index].style.color = color;
                     return "SF" + '<br/>' +  m.name + '<br/>' + m.phone;
-                })) ;
+                })[0]) ;
             localStorage.setItem('choosed', JSON.stringify(choosed));
 
             ret.push(  member
@@ -324,7 +324,7 @@
                     choosed[getKey(m)] = 1;
                     list[m.index].style.color = color;
                     return "PF" + '<br/>' +  m.name + '<br/>' + m.phone;
-                })) ;
+                })[0]) ;
             localStorage.setItem('choosed', JSON.stringify(choosed));
             return ret;
         };
